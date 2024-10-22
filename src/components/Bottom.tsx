@@ -86,7 +86,7 @@ function Bottom() {
         <Row
           title="Habitantes"
           icon={<FaPeopleGroup size={50} />}
-          count="10074"
+          count="6619"
           totalTrees={trees}
      
         />

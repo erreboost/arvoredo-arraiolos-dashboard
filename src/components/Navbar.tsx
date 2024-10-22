@@ -31,13 +31,11 @@ const Navbar: React.FC = () => {
   return (
     <div className="relative shadow-lg w-full top-0 left-0 z-999999">
       <div className="md:flex items-center justify-between bg-gray-200 h-[100px] shadow-xl  md:px-10 px-4 rounded-b-xl">
-        {/* logo section */}
-        <div className="cursor-pointer flex items-center">
-          <a href={'https://www.cm-braganca.pt/pages/87'}>
-            <img className="w-[170px] h-[60px]" src="/logo_cm.png" alt="" />
+      <div className="cursor-pointer flex items-center">
+          <a href={'https://www.cm-arraiolos.pt/'}>
+            <img className="w-20 " src="/assets/logoarraiolos.png" alt="logo" />
           </a>
         </div>
-        {/* Menu icon */}
         <div
           onClick={handleToggle}
           className="absolute right-4 top-2 cursor-pointer md:hidden w-7 h-7"
@@ -72,7 +70,7 @@ const Navbar: React.FC = () => {
           ))}
           <a
             className="ml-[10px]"
-            href="https://arvoredo-backoffice-braganca.vercel.app/sign-in"
+            href="https://arvoredo-arraiolos-backoffice.vercel.app/sign-in"
           >
             <li className="font-semibold text-gray-800 hover:text-red-500 duration-300 hover:cursor-pointer">
               Backoffice

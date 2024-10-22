@@ -9,10 +9,6 @@ const Footer = () => {
             <img className="w-16 h-full" src="/assets/errelrb.png" alt="" />
           </a>
         </div>
-        <div className="flex items-center gap-12">
-          <img src="/assets/respira.png" className="w-[100px] h-[50px]" />
-          <img src="/assets/compete.png" className="w-[170px] h-[50px]" />
-        </div>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import { toast } from "react-toastify"
 import axios from 'axios'
 
-const BASE_URL='https://lrb-app.grupoerre.pt:3010'
+const BASE_URL='https://lrb-app.grupoerre.pt:3011'
 
 export const editOccurrence = async (occurrence: any, occurrenceId: string) => {
     const token = localStorage.getItem('token')
@@ -53,8 +53,7 @@ const response = await fetch(`${BASE_URL}/api/occurrences/create-new`, {
     comments: occurrence.comments,
     status:occurrence.status,
     nif:occurrence.nif.trim(),
-    phone:occurrence.phone,
-    imgUrl: `https://lrb-app.grupoerre.pt:3010/${imagePath}`
+    imgUrl: `https://lrb-app.grupoerre.pt:3011/${imagePath}`
     }),    
 })
 

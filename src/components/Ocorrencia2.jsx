@@ -6,7 +6,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import { useCallback } from 'react'
 import { API_BASE_URL } from '../config/config'
 
-const BASE_URL='https://lrb-app.grupoerre.pt:3010'
+const BASE_URL='https://lrb-app.grupoerre.pt:3011'
 
 function Ocorrencia2() {
   const {
@@ -147,14 +147,6 @@ function Ocorrencia2() {
             </label>
           </div>
           <div className="w-full">
-          <label className="flex flex-col">
-                <span className="text-white">Telefone</span>
-                <input
-                  className="rounded-md h-[30px]"
-                  name={'phone'}
-                  {...register('phone')}
-                />
-              </label>
           </div>
           <div>
             <label className="flex flex-col">
@@ -209,7 +201,7 @@ function Ocorrencia2() {
                     formData.append('fileName', files[0]?.name)
                     console.log('Form Data', formData)
                     uploadFile(
-                      'https://lrb-app.grupoerre.pt:3010/files/upload',
+                      'https://lrb-app.grupoerre.pt:3011/files/upload',
                       formData,
                       setImagePath
                     )
