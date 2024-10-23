@@ -27,7 +27,7 @@ function Ocorrencia2() {
   const [loading, setLoading] = useState(false);
 
   const nif = watch("nif")
-  useEffect(() => console.log('Nif', nif), [nif])
+  //useEffect(() => console.log('Nif', nif), [nif])
 
   const onSubmit = (data) => {
     createOccurrence(data, imagePath)
