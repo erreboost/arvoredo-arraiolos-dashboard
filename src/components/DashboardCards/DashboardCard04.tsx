@@ -41,18 +41,18 @@ const DashboardCard04: React.FC = () => {
           visibleExtent
         );
         const treeCounts: {[key: string]: number} = {
-          Passeio: 0,
-          'Jardim público': 0,
-          Via: 0,
+          Infraestruturas: 0,
+          Jardim: 0,
           Outro: 0,
+          Via: 0,
         };
 
         filteredTrees.forEach((tree: Tree) => {
           const location = tree.Localizacao;
 
           if (
-            location === 'Passeio' ||
-            location === 'Jardim público' ||
+            location === 'Infraestruturas' ||
+            location === 'Jardim' ||
             location === 'Via'
           ) {
             treeCounts[location]++;

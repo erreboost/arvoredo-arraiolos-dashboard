@@ -29,8 +29,8 @@ const BarChart = ({labels, values, options}) => {
           ...options.scales.y.ticks,
           callback: (value) => {
             const valueMapping = {
-              Passeio: 'Passeio',
-              'Jardim público': 'Jardim público',
+              Infraestruturas: 'Infraestruturas',
+              Jardim: 'Jardim',
               Outro: 'Outro',
               Via: 'Via',
             };
