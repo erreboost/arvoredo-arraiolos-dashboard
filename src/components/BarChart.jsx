@@ -30,6 +30,7 @@ const BarChart = ({labels, values, options}) => {
           callback: (value) => {
             const valueMapping = {
               Infraestruturas: 'Infraestruturas',
+              Passeio: 'Passeio',
               Jardim: 'Jardim',
               Outro: 'Outro',
               Via: 'Via',
